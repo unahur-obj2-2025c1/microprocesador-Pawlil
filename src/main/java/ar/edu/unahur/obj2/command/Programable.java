@@ -1,6 +1,8 @@
 package ar.edu.unahur.obj2.command;
 
+
 import java.util.List;
+import java.util.Map;
 
 import ar.edu.unahur.obj2.command.comandos.Operable;
 
@@ -27,6 +29,9 @@ public interface Programable {
     void reset();
 
     void setAddr(Integer addr);
+    void setAddr(Integer addr, Integer value);
 
     Integer getAddr(Integer addr);
+    
+    Map<Integer, Integer> getMemoria();
 }
